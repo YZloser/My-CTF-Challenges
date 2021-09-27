@@ -124,7 +124,7 @@ About hardened usercopy, you can refer to [this post](https://lwn.net/Articles/6
  */
 ```
 
-CONFIG_STATIC_USERMODEHELPER will substitute the path with a static string when calling call_usermodehelper, which will prevent the exploit of hijacking prctl_hook, modprobe_path and etc.
+CONFIG_STATIC_USERMODEHELPER will substitute the path with a static string when calling call_usermodehelper, which will prevent the exploit of hijacking prctl_hook, modprobe_path and etc.
 
 ```c
 struct subprocess_info *call_usermodehelper_setup(const char *path, char **argv,
